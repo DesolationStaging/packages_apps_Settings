@@ -109,6 +109,12 @@
                 android:title="@string/deso_version_title"
                 android:summary="@string/deso_version_default"/>
 
+        <!-- Build date -->
+        <Preference android:key="build_date"
+                style="?android:preferenceInformationStyle"
+                android:title="@string/build_date_title"
+                android:summary="@string/build_date_default" />
+
         <!-- ROM Buildtype -->
         <Preference android:key="rom_buildtype"
                 style="?android:preferenceInformationStyle"
