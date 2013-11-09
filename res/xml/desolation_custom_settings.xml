@@ -38,6 +38,12 @@
         android:fragment="com.android.settings.desolation.HeadsUp" />
 
     <PreferenceScreen
+        android:key="input_methods"
+        android:title="@string/input_methods_title"
+        android:summary="@string/input_methods_summary"
+        android:fragment="com.android.settings.desolation.InputMethods" />
+
+    <PreferenceScreen
         android:key="network_traffic"
         android:title="@string/network_traffic_title"
         android:summary="@string/network_traffic_summary"
