@@ -148,5 +148,10 @@
     <!-- USB debugging -->
     <string name="adb_notify">USB debugging notify</string>
     <string name="adb_notify_summary">Display a notification when USB debugging is connected</string>
+    <string name="enable_adb_deso">Android debugging</string>
+    <string name="enable_adb_summary_deso">Enable the Android Debug Bridge (adb) interface</string>
+    <string name="adb_over_network">ADB over network</string>
+    <string name="adb_over_network_summary">Enable TCP/IP debugging over network interfaces (Wi\u2011Fi, USB networks). This setting is reset on reboot</string>
+    <string name="adb_over_network_warning">WARNING: When ADB over network is enabled, your phone is open for intrusions on all connected networks, including GSM data network!\n\nOnly use this feature when you are connected on trusted networks.\n\nDo you really want to enable this function?</string>
 
 </resources>
