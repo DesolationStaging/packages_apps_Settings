@@ -33,6 +33,11 @@
                 android:summary="@string/auto_brightness_summary"
                 android:persistent="false" />
 
+        <PreferenceScreen
+                android:key="display_rotation"
+                android:title="@string/display_rotation_title"
+                android:fragment="com.android.settings.desolation.DisplayRotation" />
+
         <ListPreference
                 android:key="screen_timeout"
                 android:title="@string/screen_timeout"
