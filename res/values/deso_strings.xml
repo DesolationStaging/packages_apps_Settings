@@ -268,4 +268,7 @@
     <string name="clock_font_light_italic">Light italic</string>
     <string name="clock_font_normal">Normal</string>
 
+    <!-- Rescan storage -->
+    <string name="storage_rescan_media">Rescan media for the storage volume</string>
+
 </resources>
