@@ -90,8 +90,7 @@
         <!-- ROM Versioning -->
         <PreferenceScreen
              android:key="category_rom_versioning"
-             android:title="@string/display_category_rom_versioning_title"
-             android:summary="@string/display_category_rom_versioning_summary">
+             android:title="@string/display_category_rom_versioning_title">
 
         <!-- Changelog -->
         <PreferenceScreen android:key="changelog"
