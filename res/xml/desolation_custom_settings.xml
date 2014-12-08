@@ -38,6 +38,12 @@
         android:fragment="com.android.settings.desolation.HeadsUp" />
 
     <PreferenceScreen
+        android:key="network_traffic"
+        android:title="@string/network_traffic_title"
+        android:summary="@string/network_traffic_summary"
+        android:fragment="com.android.settings.desolation.NetworkTraffic" />
+
+    <PreferenceScreen
         android:key="notification_drawer"
         android:title="@string/notification_drawer_title"
         android:summary="@string/notification_drawer_summary"
