@@ -165,6 +165,9 @@
     <!-- Font size sample -->
     <string name="font_size_sample">Sample</string>
 
+    <!-- Volume adjustment sounds -->
+    <string name="volume_adjust_sounds_title">Volume adjustment sounds</string>
+
     <!-- Volume button music controls -->
     <string name="volbtn_music_controls_title">Playback control</string>
     <string name="volbtn_music_controls_summary">When the screen is off, long pressing the volume keys will seek music tracks</string>
