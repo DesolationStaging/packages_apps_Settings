@@ -35,7 +35,6 @@ import android.os.Vibrator;
 import android.preference.Preference;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
-import android.provider.SearchIndexableResource;
 import android.provider.Settings.Global;
 import android.provider.Settings.System;
 import android.telephony.TelephonyManager;
@@ -43,14 +42,10 @@ import android.telephony.TelephonyManager;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
-import com.android.settings.search.BaseSearchIndexProvider;
-import com.android.settings.search.Indexable;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+public class OtherSoundSettings extends SettingsPreferenceFragment implements
+        Preference.OnPreferenceChangeListener {
 
-public class OtherSoundSettings extends SettingsPreferenceFragment implements Indexable {
     private static final String TAG = "OtherSoundSettings";
 
     private static final int DEFAULT_ON = 1;
@@ -67,6 +62,7 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
     private static final String KEY_DIAL_PAD_TONES = "dial_pad_tones";
     private static final String KEY_SCREEN_LOCKING_SOUNDS = "screen_locking_sounds";
     private static final String KEY_DOCKING_SOUNDS = "docking_sounds";
+    private static final String KEY_VOLUME_ADJUST_SOUNDS = "volume_adjust_sounds";
     private static final String KEY_TOUCH_SOUNDS = "touch_sounds";
     private static final String KEY_VIBRATE_ON_TOUCH = "vibrate_on_touch";
     private static final String KEY_DOCK_AUDIO_MEDIA = "dock_audio_media";
@@ -102,6 +98,15 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
         @Override
         public boolean isApplicable(Context context) {
             return hasDockSettings(context);
+        }
+    };
+
+    private static final SettingPref PREF_VOLUME_ADJUST_SOUNDS = new SettingPref(
+            TYPE_SYSTEM, KEY_VOLUME_ADJUST_SOUNDS, System.VOLUME_ADJUST_SOUNDS_ENABLED,
+            DEFAULT_ON) {
+        @Override
+        public boolean isApplicable(Context context) {
+            return Utils.hasVolumeRocker(context);
         }
     };
 
@@ -176,6 +181,7 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
         PREF_DIAL_PAD_TONES,
         PREF_SCREEN_LOCKING_SOUNDS,
         PREF_DOCKING_SOUNDS,
+        PREF_VOLUME_ADJUST_SOUNDS,
         PREF_TOUCH_SOUNDS,
         PREF_VIBRATE_ON_TOUCH,
         PREF_DOCK_AUDIO_MEDIA,
@@ -307,29 +313,6 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
             }
         }
     }
-
-    // === Indexing ===
-
-    public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider() {
-
-        public List<SearchIndexableResource> getXmlResourcesToIndex(
-                Context context, boolean enabled) {
-            final SearchIndexableResource sir = new SearchIndexableResource(context);
-            sir.xmlResId = R.xml.other_sound_settings;
-            return Arrays.asList(sir);
-        }
-
-        public List<String> getNonIndexableKeys(Context context) {
-            final ArrayList<String> rt = new ArrayList<String>();
-            for (SettingPref pref : PREFS) {
-                if (!pref.isApplicable(context)) {
-                    rt.add(pref.getKey());
-                }
-            }
-            return rt;
-        }
-    };
 
     private void launchNotificationSoundPicker(int code, String currentPowerRingtonePath) {
         final Intent intent = new Intent(RingtoneManager.ACTION_RINGTONE_PICKER);
