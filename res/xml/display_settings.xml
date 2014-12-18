@@ -78,6 +78,12 @@
              android:key="category_wakeup_options"
              android:title="@string/display_category_wakeup_options_title" >
 
+             <com.android.settings.desolation.SystemSettingSwitchPreference
+                android:key="volbtn_music_controls"
+                android:title="@string/volbtn_music_controls_title"
+                android:summary="@string/volbtn_music_controls_summary"
+                android:defaultValue="true" />
+
             <SwitchPreference
                 android:key="pref_volume_wake"
                 android:title="@string/pref_volume_wake_title"
