@@ -409,6 +409,8 @@
     <string name="recent_apps_location_bottom_right">Bottom right</string>
     <string name="recent_apps_location_bottom_left">Bottom left</string>
     <string name="recent_apps_location_bottom_center">Bottom center</string>
+    <string name="recent_apps_searchbar_title">Search bar</string>
+    <string name="recent_apps_searchbar_summary">Show search bar widget in recent view</string>
     <string name="recents_show_membar_title">Memory bar</string>
     <string name="recents_show_membar_summary">Show a bar with the device\'s available memory</string>
 
