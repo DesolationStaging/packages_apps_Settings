@@ -376,4 +376,17 @@
     <string name="network_traffic_color_reset">Reset color</string>
     <string name="network_traffic_color_reset_message">Reset network traffic color to default?</string>
 
+    <!-- Recent apps -->
+    <string name="recent_apps_title">Recent apps</string>
+    <string name="recent_apps_summary">Tweak recent apps and search widget</string>
+    <string name="recent_apps_button_title">Recent apps button</string>
+    <string name="recent_apps_button_summary">Show clear all recent apps button</string>
+    <string name="recent_apps_location_title">Clear button location</string>
+    <string name="recent_apps_location_top_right">Top right</string>
+    <string name="recent_apps_location_top_left">Top left</string>
+    <string name="recent_apps_location_top_center">Top center</string>
+    <string name="recent_apps_location_bottom_right">Bottom right</string>
+    <string name="recent_apps_location_bottom_left">Bottom left</string>
+    <string name="recent_apps_location_bottom_center">Bottom center</string>
+
 </resources>

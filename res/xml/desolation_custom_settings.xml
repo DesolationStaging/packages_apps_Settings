@@ -55,4 +55,10 @@
         android:summary="@string/power_menu_summary"
         android:fragment="com.android.settings.desolation.PowerMenu" />
 
+    <PreferenceScreen
+        android:key="recent_apps"
+        android:title="@string/recent_apps_title"
+        android:summary="@string/recent_apps_summary"
+        android:fragment="com.android.settings.desolation.RecentApps" />
+
 </PreferenceScreen>
