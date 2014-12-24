@@ -24,6 +24,7 @@
     <!-- About ROM -->
     <string name="deso_version_title">Desolation version</string>
     <string name="deso_version_default">Unknown</string>
+    <string name="model_name">Model name</string>
 
     <!-- ROM version -->
     <string name="rom_buildtype_title">ROM build type</string>
