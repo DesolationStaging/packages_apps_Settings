@@ -38,6 +38,12 @@
         android:fragment="com.android.settings.desolation.HeadsUp" />
 
     <PreferenceScreen
+        android:key="notification_drawer"
+        android:title="@string/notification_drawer_title"
+        android:summary="@string/notification_drawer_summary"
+        android:fragment="com.android.settings.desolation.NotificationDrawer" />
+
+    <PreferenceScreen
         android:key="power_menu"
         android:title="@string/power_menu_title"
         android:summary="@string/power_menu_summary"
