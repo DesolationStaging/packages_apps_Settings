@@ -382,9 +382,11 @@
 
     <!-- Recent apps -->
     <string name="recent_apps_title">Recent apps</string>
-    <string name="recent_apps_summary">Tweak recent apps and search widget</string>
+    <string name="recent_apps_summary">Tweak recent apps clear all button</string>
     <string name="recent_apps_button_title">Recent apps button</string>
     <string name="recent_apps_button_summary">Show clear all recent apps button</string>
+    <string name="recent_apps_dismiss_title">Dismiss all tasks</string>
+    <string name="recent_apps_dismiss_summary">When disabled keeps foreground process</string>
     <string name="recent_apps_location_title">Clear button location</string>
     <string name="recent_apps_location_top_right">Top right</string>
     <string name="recent_apps_location_top_left">Top left</string>

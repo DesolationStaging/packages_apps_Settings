@@ -24,6 +24,13 @@
         android:summary="@string/recent_apps_button_summary"
         android:defaultValue="false" />
 
+    <com.android.settings.desolation.SystemSettingSwitchPreference
+        android:key="recents_clear_all_dismiss_all"
+        android:title="@string/recent_apps_dismiss_title"
+        android:summary="@string/recent_apps_dismiss_summary"
+        android:dependency="show_clear_all_recents"
+        android:defaultValue="true" />
+
     <ListPreference
         android:key="recents_clear_all_location"
         android:title="@string/recent_apps_location_title"
