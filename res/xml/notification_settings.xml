@@ -95,6 +95,14 @@
                 android:persistent="false"
                 android:ringtoneType="notification" />
 
+        <!-- Default alarm ringtone -->
+        <com.android.settings.DefaultRingtonePreference
+                android:key="alarm_ringtone"
+                android:title="@string/alarm_ringtone_title"
+                android:dialogTitle="@string/alarm_ringtone_title"
+                android:persistent="false"
+                android:ringtoneType="alarm" />
+
         <!-- Screenshot tone -->
         <com.android.settings.desolation.SystemSettingSwitchPreference
                 android:key="screenshot_sound"
