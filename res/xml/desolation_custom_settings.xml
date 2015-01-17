@@ -20,6 +20,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
     <PreferenceScreen
+        android:key="battery_styles"
+        android:title="@string/battery_styles_title"
+        android:summary="@string/battery_styles_summary"
+        android:fragment="com.android.settings.desolation.BatteryStyles" />
+
+    <PreferenceScreen
         android:key="power_menu"
         android:title="@string/power_menu_title"
         android:summary="@string/power_menu_summary"
