@@ -28,6 +28,12 @@
     <string name="build_date_title">Build date</string>
     <string name="build_date_default">2012-01-01-0000</string>
 
+    <!-- Dashboard header -->
+    <string name="header_category_personalization">Personalization</string>
+
+    <!-- Desolated Core -->
+    <string name="desolation_custom_title">Desolated Core</string>
+
     <!-- Superuser header -->
     <string name="supersu_title">Superuser</string>
 

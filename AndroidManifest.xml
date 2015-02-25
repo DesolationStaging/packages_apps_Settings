@@ -2072,6 +2072,21 @@
             </intent-filter>
         </activity>
 
+        <!-- Desolation Custom Settings -->
+        <activity android:name="Settings$CustomSettingsActivity"
+            android:label="@string/desolation_custom_title"
+            android:taskAffinity="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.android.settings.desolation.CustomSettings" />
+        </activity>
+
+        <activity
+             android:name=".desolation.CustomSettings" />
+
         <provider
             android:name=".search.SettingsSearchIndexablesProvider"
             android:authorities="com.android.settings"
