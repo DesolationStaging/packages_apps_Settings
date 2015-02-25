@@ -71,6 +71,21 @@
 
     </dashboard-category>
 
+    <!-- Personalization -->
+    <dashboard-category
+            android:id="@+id/device_personalization"
+            android:title="@string/header_category_personalization" >
+
+        <!-- Desolation Settings -->
+        <dashboard-tile
+                android:id="@+id/desolation_custom_settings"
+                android:title="@string/desolation_custom_title"
+                android:fragment="com.android.settings.desolation.CustomSettings"
+                android:icon="@drawable/ic_desolation_settings"
+                />
+
+    </dashboard-category>
+
     <!-- DEVICE -->
     <dashboard-category
             android:id="@+id/device_section"
