@@ -352,5 +352,6 @@
     <string name="qs_music_play_tile">Play</string>
     <string name="qs_ambient_display_tile">Ambient display</string>
     <string name="qs_screenrecord_tile">Screenrecord</string>
+    <string name="qs_tile_heads_up">Heads up</string>
 
 </resources>
