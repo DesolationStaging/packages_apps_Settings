@@ -151,7 +151,7 @@ public class HeadsUp extends SettingsPreferenceFragment
         super.onStart();
         final SettingsActivity activity = (SettingsActivity) getActivity();
         mEnabledSwitch = new BaseSystemSettingSwitchBar(activity, activity.getSwitchBar(),
-                Settings.System.HEADS_UP_NOTIFICATION, true, this);
+                Settings.System.HEADS_UP_USER_ENABLED, true, this);
     }
 
     @Override
@@ -418,7 +418,7 @@ public class HeadsUp extends SettingsPreferenceFragment
 
     private void updateEnabledState() {
         boolean enabled = Settings.System.getInt(getContentResolver(),
-        Settings.System.HEADS_UP_NOTIFICATION, 1) != 0;
+                Settings.System.HEADS_UP_USER_ENABLED, Settings.System.HEADS_UP_USER_ON) != 0;
         mPrefsContainer.setVisibility(enabled ? View.VISIBLE : View.GONE);
         mDisabledText.setVisibility(enabled ? View.GONE : View.VISIBLE);
     }
@@ -426,7 +426,7 @@ public class HeadsUp extends SettingsPreferenceFragment
     @Override
     public void onEnablerChanged(boolean isEnabled) {
         mLastEnabledState = Settings.System.getInt(getContentResolver(),
-                Settings.System.HEADS_UP_NOTIFICATION, 1) != 0;
+                Settings.System.HEADS_UP_USER_ENABLED, Settings.System.HEADS_UP_USER_ON) != 0;
         updateEnabledState();
     }
 
