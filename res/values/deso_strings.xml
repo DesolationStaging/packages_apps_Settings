@@ -618,5 +618,9 @@
     <string name="link_volume_option_title">Link ring and notification volumes</string>
     <string name="notification_volume_option_title">Notification volume</string>
     <string name="ring_notification_volume_option_tile">Ring and notification volume</string>
+    
+    <!-- Welcome back notification -->
+    <string name="welcome_back_notification_title">Welcome back</string>
+    <string name="welcome_back_notification_summary">Disables welcome message on boot</string>
 
 </resources>
