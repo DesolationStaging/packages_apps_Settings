@@ -100,7 +100,7 @@
         android:key="wakelock_blocker"
         android:title="@string/wakelock_blocker_title"
         android:summary="@string/wakelock_blocker_summary"
-        android:icon="@drawable/ic_menu_save"
+        android:icon="@drawable/ic_menu_add_dark"
         android:fragment="com.android.settings.desolation.WakeLockBlocker" />
 
 </PreferenceScreen>
