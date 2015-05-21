@@ -378,6 +378,7 @@
     <string name="qs_ambient_display_tile">Ambient display</string>
     <string name="qs_screenrecord_tile">Screenrecord</string>
     <string name="qs_tile_heads_up">Heads up</string>
+    <string name="qs_expanded_desktop_tile">Expanded desktop</string>
 
     <!-- Network traffic -->
     <string name="network_traffic_title">Network traffic</string>
