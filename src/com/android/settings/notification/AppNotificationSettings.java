@@ -210,6 +210,7 @@ public class AppNotificationSettings extends SettingsPreferenceFragment {
         if (Utils.isSystemPackage(pm, info)) {
             getPreferenceScreen().removePreference(mBlock);
             mPriority.setDependency(null); // don't have it depend on a preference that's gone
+            mHeadsUp.setDependency(null);
         }
     }
 
