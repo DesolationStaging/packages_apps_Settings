@@ -27,6 +27,13 @@
         android:fragment="com.android.settings.desolation.BatteryStyles" />
 
     <PreferenceScreen
+        android:key="boot_animation_styles"
+        android:title="@string/enable_bootanimation_title"
+        android:summary="@string/enable_bootanimation_styles_summary"
+        android:icon="@drawable/ic_settings_dock"
+        android:fragment="com.android.settings.desolation.BootAnimation" />
+
+    <PreferenceScreen
         android:key="clock_styles"
         android:title="@string/clock_styles_title"
         android:summary="@string/clock_styles_summary"
@@ -72,7 +79,7 @@
         android:key="status_bar"
         android:title="@string/status_bar_title"
         android:summary="@string/status_bar_summary"
-        android:icon="@drawable/ic_settings_dock"
+        android:icon="@drawable/ic_sysbar_quicksettings"
         android:fragment="com.android.settings.desolation.StatusBar" />
 
 </PreferenceScreen>
