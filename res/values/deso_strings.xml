@@ -608,8 +608,7 @@
     <string name="pulse_only_mode">Pulse (default)</string>
 
     <!-- Input methods -->
-    <string name="input_methods_title">Input methods</string>
-    <string name="input_methods_summary">Advanced options for your keyboard</string>
+    <string name="input_methods_title">Advanced options</string>
     <string name="disable_fullscreen_keyboard_title">Disable fullscreen keyboard</string>
     <string name="disable_fullscreen_keyboard_summary">Landscape keyboard will never take up entire screen</string>
     <string name="volume_key_cursor_control_title">Volume key cursor control</string>

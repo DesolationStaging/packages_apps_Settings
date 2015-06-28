@@ -51,6 +51,12 @@
         <!-- Enabled input method list will be populated programmatically here. -->
     </PreferenceCategory>
 
+    <!-- Advanced options -->
+    <PreferenceScreen
+        android:key="input_methods"
+        android:title="@string/input_methods_title"
+        android:fragment="com.android.settings.desolation.InputMethods" />
+
     <PreferenceCategory
             android:key="hard_keyboard"
             android:title="@string/builtin_keyboard_settings_title"
