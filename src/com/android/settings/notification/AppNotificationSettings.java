@@ -209,8 +209,8 @@ public class AppNotificationSettings extends SettingsPreferenceFragment {
         // Users cannot block notifications from system/signature packages
         if (Utils.isSystemPackage(pm, info)) {
             getPreferenceScreen().removePreference(mBlock);
+            getPreferenceScreen().removePreference(mHeadsUp);
             mPriority.setDependency(null); // don't have it depend on a preference that's gone
-            mHeadsUp.setDependency(null);
         }
     }
 

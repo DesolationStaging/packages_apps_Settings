@@ -29,7 +29,6 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.LauncherActivityInfo;
 import android.content.pm.LauncherApps;
 import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.pm.ResolveInfo;
 import android.content.pm.Signature;
 import android.graphics.drawable.Drawable;
@@ -450,13 +449,6 @@ public class NotificationAppList extends PinnedHeaderListFragment
                 for (LauncherActivityInfo lai : lais) {
                     if (DEBUG) Log.d(TAG, "    " + lai.getComponentName().toString());
                     appInfos.add(lai.getApplicationInfo());
-                }
-                // explicitly adding systemui
-                try {
-                    appInfos.add(mPM.getApplicationInfo("com.android.systemui", 0));
-                }
-                catch (PackageManager.NameNotFoundException e) {
-                    // systemui not found, do nothing
                 }
 
                 final List<ResolveInfo> resolvedConfigActivities
