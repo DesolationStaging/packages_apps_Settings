@@ -27,6 +27,11 @@
         android:title="@string/welcome_back_notification_title"
         android:summary="@string/welcome_back_notification_summary"
         android:defaultValue="false" />
+        
+    <com.android.settings.desolation.SystemSettingSwitchPreference
+        android:key="use_scrolling_cache"
+        android:title="@string/use_scrolling_cache_title"
+        android:summary="@string/use_scrolling_cache_summary" />
 
     <PreferenceScreen
             android:key="local_backup_password"

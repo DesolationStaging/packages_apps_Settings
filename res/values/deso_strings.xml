@@ -632,6 +632,10 @@
     <!-- Welcome back notification -->
     <string name="welcome_back_notification_title">Welcome back</string>
     <string name="welcome_back_notification_summary">Disables welcome message on boot</string>
+
+    <!-- Scrolling Cache -->
+    <string name="use_scrolling_cache_title">Scrolling cache</string>
+    <string name="use_scrolling_cache_summary">Enable or disable scrolling cache</string>
     
     <!-- Boot animation -->
     <string name="enable_bootanimation_title">Boot animation</string>
