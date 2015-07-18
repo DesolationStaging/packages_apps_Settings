@@ -19,6 +19,24 @@
         android:title="@string/display_settings"
         settings:keywords="@string/keywords_display">
 
+        <PreferenceCategory
+            android:key="category_doze_options"
+            android:title="@string/display_category_doze_options_title" >
+
+            <SwitchPreference
+                android:key="doze"
+                android:title="@string/doze_title"
+                android:summary="@string/doze_summary"
+                android:persistent="false" />
+
+            <PreferenceScreen
+                android:fragment="com.android.settings.slim.fragments.DozeSettingsFragment"
+                android:key="advanced_doze_options"
+                android:title="@string/doze_settings_title"
+                android:dependency="doze" />
+
+        </PreferenceCategory>
+
         <SwitchPreference
                 android:key="auto_brightness"
                 android:title="@string/auto_brightness_title"
@@ -126,21 +144,4 @@
 
          </PreferenceCategory>
 
-        <PreferenceCategory
-            android:key="category_doze_options"
-            android:title="@string/display_category_doze_options_title" >
-
-            <SwitchPreference
-                    android:key="doze"
-                    android:title="@string/doze_title"
-                    android:summary="@string/doze_summary"
-                    android:persistent="false" />
-
-            <PreferenceScreen
-                android:fragment="com.android.settings.slim.fragments.DozeSettingsFragment"
-                android:key="advanced_doze_options"
-                android:title="@string/doze_settings_title"
-                android:dependency="doze" />
-
-         </PreferenceCategory>
 </PreferenceScreen>
