@@ -37,12 +37,6 @@
         android:key="app_security"
         android:title="@string/app_security_title">
 
-        <Preference
-            android:key="privacy_guard_manager"
-            android:title="@string/privacy_guard_manager_title"
-            android:summary="@string/privacy_guard_manager_summary"
-            android:fragment="com.android.settings.desolation.privacyguard.PrivacyGuardManager" />
-
         <ListPreference
             android:key="sms_security_check_limit"
             android:dialogTitle="@string/sms_security_check_limit_title"
